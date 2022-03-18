@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="1"
+    android:background="@drawable/pexelspixabay164501"
+    tools:context=".StopCreditCard">
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="312dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="140dp"
+        android:gravity="center"
+        android:shadowColor="@color/black"
+        android:shadowDy="5"
+        android:shadowRadius="5"
+        android:text="CreditCard Number"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/stop_creditcard_id"
+        android:layout_width="330dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="56dp"
+        android:ems="10"
+        android:hint="Enter CreditCard Number"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <Button
+        android:id="@+id/stop_button_id"
+        android:layout_width="217dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginEnd="69dp"
+        android:layout_marginBottom="172dp"
+        android:background="@drawable/button_bg"
+        android:rotationY="10"
+        android:shadowColor="@color/black"
+        android:shadowDy="5"
+        android:shadowRadius="5"
+        android:text="Stop"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stop_creditcard_id"
+        app:layout_constraintVertical_bias="0.862" />
+</androidx.constraintlayout.widget.ConstraintLayout>

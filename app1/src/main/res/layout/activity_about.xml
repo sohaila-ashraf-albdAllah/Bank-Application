@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A1931"
+    tools:context=".About">
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.9"
+        android:background="@drawable/pexelspixabay164501"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="-36dp"
+        tools:layout_editor_absoluteY="68dp">
+
+        <Button
+            android:id="@+id/infobutton"
+            android:layout_width="250dp"
+            android:layout_height="62dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_bg"
+            android:rotationY="5"
+            android:shadowColor="@color/black"
+            android:shadowDy="2"
+            android:shadowRadius="2"
+            android:text="Information"
+            android:textSize="18sp"
+            app:backgroundTint="@null" />
+
+        <ScrollView
+            android:id="@+id/informationscroll"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="serif"
+                    android:text="This Application is made for virtual Bank by SA team development for bugs and issues contact Usz
+                                  Phone : 01114666333
+                                  E-mail : SA_team@gmail.com"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/locbutton"
+            android:layout_width="196dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_bg"
+            android:rotationY="5"
+            android:shadowColor="@color/black"
+            android:shadowDy="2"
+            android:shadowRadius="2"
+            android:text="Locations"
+            android:textSize="18sp"
+            app:backgroundTint="@null" />
+
+        <ScrollView
+            android:id="@+id/locationscroll"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="200dp"
+                    android:layout_height="250dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="serif"
+                    android:text="Cairo :
+                                   Gesr Al Suez , Al Alf Maskan Square
+                                   Maadi Street 9
+                                   Tomanbay st , Kasr El Tahra Sq Roxy
+                                Alexandria :
+                                     Al Mesallah Sharq , Al Attarin
+                                    Al Maamourah , Al Montaza First"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
